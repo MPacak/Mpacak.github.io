@@ -4,7 +4,7 @@ function showloader() {
 }
 
 function searchShow(query) {
-  fetch(`http://api.tvmaze.com/search/shows?q=${query}`)
+  fetch(`https://api.tvmaze.com/search/shows?q=${query}`)
     .then((response) => {
       if (response.ok) {
         return response.json();
